@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.ReactCollapse--collapse {
+  transition: height 500ms;
+}
+
+/* Firefox */
+* {
+  scrollbar-color: hsl(var(--p)) hsl(var(--b1));
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: hsl(var(--b1));
+  border-radius: 14px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--p));
+  border-radius: 14px;
+  border: 2px solid hsl(var(--n));
+}
+
+/* Youtube Player Sizing */
+.youtube-player iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.player-blocker {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1;
+}
+
+.btn-ghost.btn[disabled] {
+    background-color: transparent;
+}
